@@ -1,1 +1,195 @@
-Hello World
+---
+layout: default
+---
+
+<div class="bio">
+  Ryan works at
+  <a href="http://spreedly.com">Spreedly</a> where he designs, develops and documents payment processing systems.
+</div>
+
+<h2>Posts</h2>
+
+<ol class="index posts">
+  {% for post in site.posts %}
+  <li>
+    <span class="header">{{ post.date | date: "%b %-d, %Y" }}</span>
+    <span class="arrow">»</span>
+    <span class="main">
+      <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+    </span>
+    <span class="meta"></span>
+  </li>
+  {% endfor %}
+</ol>
+
+<h2>Projects</h2>
+
+<ol class="index projects">
+  <li>
+    <span class="header">2015 - current</span>
+    <span class="arrow">»</span>
+    <span class="main">
+      <a href="https://github.com/rwdaigle/metrix/">Metrix</a> Elixir metrics library
+      <span class="reference">
+        as the creator
+      </span>
+    </span>
+  </li>
+  <li>
+    <span class="header">2014 - current</span>
+    <span class="arrow">»</span>
+    <span class="main">
+      <a href="https://github.com/Shopify/active_merchant/">Active Merchant</a>
+      <span class="reference">
+        as a
+        <a href="https://github.com/Shopify/active_merchant/commits?author=rwdaigle">contributor</a>
+      </span>
+    </span>
+  </li>
+  <li>
+    <span class="header">2013 - current</span>
+    <span class="arrow">»</span>
+    <span class="main">
+      <a href="https://github.com/rwdaigle/heroku-buildpack-github-markdown">Github Markdown Buildpack</a>
+      <span class="reference">
+        as the creator
+      </span>
+    </span>
+  </li>
+  <li>
+    <span class="header">2012 - current</span>
+    <span class="arrow">»</span>
+    <span class="main">
+      <a href="https://github.com/rwdaigle/heroku-log-parser">Heroku Log Parser</a>
+      <span class="reference">
+        as the creator
+      </span>
+    </span>
+  </li>
+  <li>
+    <span class="header">2007 - 2008</span>
+    <span class="arrow">»</span>
+    <span class="main">
+      <a href="https://github.com/rails/rails/">Ruby on Rails</a>
+      <span class="reference">
+        as a
+        <a href="http://contributors.rubyonrails.org/contributors/ryan-daigle/commits">contributor</a>
+      </span>
+    </span>
+  </li>
+</ol>
+
+<h2>Elsewhere</h2>
+
+<ol class="index articles">
+  <li>
+    <span class="header">18 December 2014</span>
+    <span class="arrow">»</span>
+    <span class="main">
+      <a href="http://blog.spreedly.com/2014/12/18/pci-dss-v3-0-for-online-merchants/">PCI-DSS v3.0 for Online Merchants</a>
+      <span class="reference">
+        on
+        <a href="http://blog.spreedly.com">The Spreedly Blog</a>
+      </span>
+    </span>
+  </li>
+  <li>
+    <span class="header">25 November 2014</span>
+    <span class="arrow">»</span>
+    <span class="main">
+      <a href="http://blog.spreedly.com/2014/11/24/spreedlys-take-on-apple-pay/">Spreedly's Take on Apple Pay</a>
+      <span class="reference">
+        on
+        <a href="http://blog.spreedly.com">The Spreedly Blog</a>
+      </span>
+    </span>
+  </li>
+  <li>
+    <span class="header">8 July 2014</span>
+    <span class="arrow">»</span>
+    <span class="main">
+      <a href="http://blog.spreedly.com/2014/07/08/accepting-payments-in-your-mobile-app/">Accepting Payments in Your Mobile App</a>
+      <span class="reference">
+        on
+        <a href="http://blog.spreedly.com">The Spreedly Blog</a>
+      </span>
+    </span>
+  </li>
+  <li>
+    <span class="header">30 April 2014</span>
+    <span class="arrow">»</span>
+    <span class="main">
+      <a href="http://blog.spreedly.com/2014/04/30/announcing-payment-method-distribution/">Announcing Payment Method Distribution</a>
+      <span class="reference">
+        on
+        <a href="http://blog.spreedly.com">The Spreedly Blog</a>
+      </span>
+    </span>
+  </li>
+  <li>
+    <span class="header">15 August 2013</span>
+    <span class="arrow">»</span>
+    <span class="main">
+      <a href="https://blog.heroku.com/archives/2013/8/15/twelve-factor-apps">Building Twelve Factor Apps on Heroku</a>
+      <span class="reference">
+        on
+        <a href="https://blog.heroku.com">The Heroku Blog</a>
+      </span>
+    </span>
+  </li>
+  <li>
+    <span class="header">24 April 2013</span>
+    <span class="arrow">»</span>
+    <span class="main">
+      <a href="https://devcenter.heroku.com/articles/increasing-application-performance-with-http-cache-headers">Increasing Application Performance with HTTP Cache Headers</a>
+      <span class="reference">
+        on
+        <a href="https://devcenter.heroku.com">The Heroku Devcenter</a>
+      </span>
+    </span>
+  </li>
+  <li>
+    <span class="header">28 February 2013</span>
+    <span class="arrow">»</span>
+    <span class="main">
+      <a href="http://www.miyagijournal.com/articles/five-steps-application-logging/">5 Steps to Better Application Logging</a>
+      <span class="reference">
+        on
+        <a href="http://www.miyagijournal.com/">The Miyagi Journal</a>
+      </span>
+    </span>
+  </li>
+  <li>
+    <span class="header">09 November 2012</span>
+    <span class="arrow">»</span>
+    <span class="main">
+      <a href="http://www.higherorderheroku.com/articles/cloudflare-dns-heroku/">Configuring CloudFlare DNS for a Heroku App</a>
+      <span class="reference">
+        on
+        <a href="http://www.higherorderheroku.com/">Higher Order Heroku</a>
+      </span>
+    </span>
+  </li>
+  <li>
+    <span class="header">10 July 2012</span>
+    <span class="arrow">»</span>
+    <span class="main">
+      <a href="http://www.higherorderheroku.com/articles/using-vulcan-to-build-binary-dependencies-on-heroku/">Building Dependency Binaries for Heroku Applications</a>
+      <span class="reference">
+        on
+        <a href="http://www.higherorderheroku.com/">Higher Order Heroku</a>
+      </span>
+    </span>
+  </li>
+  <li>
+    <span class="header">2006 - 2010</span>
+    <span class="arrow">»</span>
+    <span class="main">
+      <a href="http://archives.ryandaigle.com/tags/Edge%20Rails">What's New in Edge Rails</a>
+      <span class="reference">
+        on
+        <a href="http://archives.ryandaigle.com">the old ryandaigle.com</a>
+      </span>
+    </span>
+  </li>
+</ol>
