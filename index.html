@@ -1,195 +1,104 @@
 ---
-layout: default
+layout: page
+title: Home
 ---
 
-<div class="bio">
-  Ryan works at
-  <a href="http://spreedly.com">Spreedly</a> where he designs, develops and documents payment processing systems.
-</div>
+<section class="c-archives">
+  <h2 class="c-archives__year">Projects</h2>
+  <ul class="c-archives__list">
+    <li class="c-archives__item">
+      <h3><a href="https://github.com/Shopify/active_merchant/commits?author=rwdaigle">Active Merchant</a></h3>
+      <p>2014 - present</p>
+    </li>
+    <li class="c-archives__item">
+      <h3><a href="https://github.com/spreedly/gala">Gala Apple Pay library</a></h3>
+      <p>2015 - present</p>
+    </li>
+    <li class="c-archives__item">
+      <h3><a href="https://github.com/rails/rails/">Ruby on Rails</a></h3>
+      <p>2007 - 2008</p>
+    </li>
+</section>
 
-<h2>Posts</h2>
+<section class="c-archives">
+  <h2 class="c-archives__year">Writings</h2>
+  <ul class="c-archives__list">
+    <li class="c-archives__item">
+      <h3><a href="http://blog.spreedly.com/2014/12/18/pci-dss-v3-0-for-online-merchants/">PCI-DSS v3.0 for Online Merchants</a></h3>
+      <p>December 18, 2014</p>
+    </li>
+    <li class="c-archives__item">
+      <h3><a href="http://blog.spreedly.com/2014/11/24/spreedlys-take-on-apple-pay/">Spreedly's Take on Apple Pay</a></h3>
+      <p>November 25, 2014</p>
+    </li>
+    <li class="c-archives__item">
+      <h3><a href="/a/openssl-generate-apple-pay-csr">Generate an Apple Pay CSR with OpenSSL</a></h3>
+      <p>November 6, 2014</p>
+    </li>
+    <li class="c-archives__item">
+      <h3><a href="/a/expose-javascript-api-with-browserify/">Exposing a Javascript API in a Web Page with Browserify</a></h3>
+      <p>October 9, 2014</p>
+    </li>
+    <li class="c-archives__item">
+      <h3><a href="http://blog.spreedly.com/2014/07/08/accepting-payments-in-your-mobile-app/">Accepting Payments in Your Mobile App</a></h3>
+      <p>July 8, 2014</p>
+    </li>
+    <li class="c-archives__item">
+      <h3><a href="http://blog.spreedly.com/2014/04/30/announcing-payment-method-distribution/">Announcing Payment Method Distribution</a></h3>
+      <p>April 30, 2014</p>
+    </li>
+    <li class="c-archives__item">
+      <h3><a href="https://blog.heroku.com/archives/2013/8/15/twelve-factor-apps">Building Twelve Factor Apps on Heroku</a></h3>
+      <p>August 15, 2013</p>
+    </li>
+    <li class="c-archives__item">
+      <h3><a href="/a/time-series-db-design-with-influx/">Time-Series Database Design with InfluxDB</a></h3>
+      <p>August 13, 2013</p>
+    </li>
+    <li class="c-archives__item">
+      <h3><a href="https://devcenter.heroku.com/articles/increasing-application-performance-with-http-cache-headers">Increasing Application Performance with HTTP Cache Headers</a></h3>
+      <p>April 24, 2013</p>
+    </li>
+    <li class="c-archives__item">
+      <h3><a href="http://www.miyagijournal.com/articles/five-steps-application-logging/">5 Steps to Better Application Logging</a></h3>
+      <p>February 28, 2013</p>
+    </li>
+    <li class="c-archives__item">
+      <h3><a href="/a/the-new-github-gists/">The New Gist: What It Is and What It Could Be</a></h3>
+      <p>December 13, 2012</p>
+    </li>
+    <li class="c-archives__item">
+      <h3><a href="http://www.higherorderheroku.com/articles/cloudflare-dns-heroku/">Configuring CloudFlare DNS for a Heroku App</a></h3>
+      <p>November 9, 2012</p>
+    </li>
+    <li class="c-archives__item">
+      <h3><a href="http://archives.ryandaigle.com/tags/Edge%20Rails">What's New in Edge Rails</a></h3>
+      <p>2006 - 2010</p>
+    </li>
+  </ul>
+</section>
 
-<ol class="index posts">
-  {% for post in site.posts %}
-  <li>
-    <span class="header">{{ post.date | date: "%b %-d, %Y" }}</span>
-    <span class="arrow">»</span>
-    <span class="main">
-      <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-    </span>
-    <span class="meta"></span>
-  </li>
-  {% endfor %}
-</ol>
+<section class="c-archives">
+{% for post in site.posts  %}
+    {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+    {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
 
-<h2>Projects</h2>
-
-<ol class="index projects">
-  <li>
-    <span class="header">2015 - current</span>
-    <span class="arrow">»</span>
-    <span class="main">
-      <a href="https://github.com/rwdaigle/metrix/">Metrix</a> Elixir metrics library
-      <span class="reference">
-        as the creator
-      </span>
-    </span>
-  </li>
-  <li>
-    <span class="header">2014 - current</span>
-    <span class="arrow">»</span>
-    <span class="main">
-      <a href="https://github.com/Shopify/active_merchant/">Active Merchant</a>
-      <span class="reference">
-        as a
-        <a href="https://github.com/Shopify/active_merchant/commits?author=rwdaigle">contributor</a>
-      </span>
-    </span>
-  </li>
-  <li>
-    <span class="header">2013 - current</span>
-    <span class="arrow">»</span>
-    <span class="main">
-      <a href="https://github.com/rwdaigle/heroku-buildpack-github-markdown">Github Markdown Buildpack</a>
-      <span class="reference">
-        as the creator
-      </span>
-    </span>
-  </li>
-  <li>
-    <span class="header">2012 - current</span>
-    <span class="arrow">»</span>
-    <span class="main">
-      <a href="https://github.com/rwdaigle/heroku-log-parser">Heroku Log Parser</a>
-      <span class="reference">
-        as the creator
-      </span>
-    </span>
-  </li>
-  <li>
-    <span class="header">2007 - 2008</span>
-    <span class="arrow">»</span>
-    <span class="main">
-      <a href="https://github.com/rails/rails/">Ruby on Rails</a>
-      <span class="reference">
-        as a
-        <a href="http://contributors.rubyonrails.org/contributors/ryan-daigle/commits">contributor</a>
-      </span>
-    </span>
-  </li>
-</ol>
-
-<h2>Elsewhere</h2>
-
-<ol class="index articles">
-  <li>
-    <span class="header">18 December 2014</span>
-    <span class="arrow">»</span>
-    <span class="main">
-      <a href="http://blog.spreedly.com/2014/12/18/pci-dss-v3-0-for-online-merchants/">PCI-DSS v3.0 for Online Merchants</a>
-      <span class="reference">
-        on
-        <a href="http://blog.spreedly.com">The Spreedly Blog</a>
-      </span>
-    </span>
-  </li>
-  <li>
-    <span class="header">25 November 2014</span>
-    <span class="arrow">»</span>
-    <span class="main">
-      <a href="http://blog.spreedly.com/2014/11/24/spreedlys-take-on-apple-pay/">Spreedly's Take on Apple Pay</a>
-      <span class="reference">
-        on
-        <a href="http://blog.spreedly.com">The Spreedly Blog</a>
-      </span>
-    </span>
-  </li>
-  <li>
-    <span class="header">8 July 2014</span>
-    <span class="arrow">»</span>
-    <span class="main">
-      <a href="http://blog.spreedly.com/2014/07/08/accepting-payments-in-your-mobile-app/">Accepting Payments in Your Mobile App</a>
-      <span class="reference">
-        on
-        <a href="http://blog.spreedly.com">The Spreedly Blog</a>
-      </span>
-    </span>
-  </li>
-  <li>
-    <span class="header">30 April 2014</span>
-    <span class="arrow">»</span>
-    <span class="main">
-      <a href="http://blog.spreedly.com/2014/04/30/announcing-payment-method-distribution/">Announcing Payment Method Distribution</a>
-      <span class="reference">
-        on
-        <a href="http://blog.spreedly.com">The Spreedly Blog</a>
-      </span>
-    </span>
-  </li>
-  <li>
-    <span class="header">15 August 2013</span>
-    <span class="arrow">»</span>
-    <span class="main">
-      <a href="https://blog.heroku.com/archives/2013/8/15/twelve-factor-apps">Building Twelve Factor Apps on Heroku</a>
-      <span class="reference">
-        on
-        <a href="https://blog.heroku.com">The Heroku Blog</a>
-      </span>
-    </span>
-  </li>
-  <li>
-    <span class="header">24 April 2013</span>
-    <span class="arrow">»</span>
-    <span class="main">
-      <a href="https://devcenter.heroku.com/articles/increasing-application-performance-with-http-cache-headers">Increasing Application Performance with HTTP Cache Headers</a>
-      <span class="reference">
-        on
-        <a href="https://devcenter.heroku.com">The Heroku Devcenter</a>
-      </span>
-    </span>
-  </li>
-  <li>
-    <span class="header">28 February 2013</span>
-    <span class="arrow">»</span>
-    <span class="main">
-      <a href="http://www.miyagijournal.com/articles/five-steps-application-logging/">5 Steps to Better Application Logging</a>
-      <span class="reference">
-        on
-        <a href="http://www.miyagijournal.com/">The Miyagi Journal</a>
-      </span>
-    </span>
-  </li>
-  <li>
-    <span class="header">09 November 2012</span>
-    <span class="arrow">»</span>
-    <span class="main">
-      <a href="http://www.higherorderheroku.com/articles/cloudflare-dns-heroku/">Configuring CloudFlare DNS for a Heroku App</a>
-      <span class="reference">
-        on
-        <a href="http://www.higherorderheroku.com/">Higher Order Heroku</a>
-      </span>
-    </span>
-  </li>
-  <li>
-    <span class="header">10 July 2012</span>
-    <span class="arrow">»</span>
-    <span class="main">
-      <a href="http://www.higherorderheroku.com/articles/using-vulcan-to-build-binary-dependencies-on-heroku/">Building Dependency Binaries for Heroku Applications</a>
-      <span class="reference">
-        on
-        <a href="http://www.higherorderheroku.com/">Higher Order Heroku</a>
-      </span>
-    </span>
-  </li>
-  <li>
-    <span class="header">2006 - 2010</span>
-    <span class="arrow">»</span>
-    <span class="main">
-      <a href="http://archives.ryandaigle.com/tags/Edge%20Rails">What's New in Edge Rails</a>
-      <span class="reference">
-        on
-        <a href="http://archives.ryandaigle.com">the old ryandaigle.com</a>
-      </span>
-    </span>
-  </li>
-</ol>
+    {% if forloop.first %}
+        <h2 class="c-archives__year" id="{{ this_year }}-ref">{{this_year}}</h2>
+        <ul class="c-archives__list">
+    {% endif %}
+        <li class="c-archives__item">
+            <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+            <p>{{ post.date | date: "%b %-d, %Y" }}</p>
+        </li>
+    {% if forloop.last %}
+        </ul>
+    {% else %}
+        {% if this_year != next_year %}
+        </ul>
+        <h2 class="c-archives__year" id="{{ next_year }}-ref">{{next_year}}</h2>
+        <ul class="c-archives__list">
+        {% endif %}
+    {% endif %}
+{% endfor %}
+</section>
