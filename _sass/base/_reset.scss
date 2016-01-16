@@ -18,12 +18,13 @@ html {
     min-height: 100%;
     box-sizing: border-box;
     -webkit-tap-highlight-color: transparent;
-    font-size: 62.5%; // Make it easy to calculate rems to px
+    font-size: 55%; // Make it easy to calculate rems to px
 }
 
 body {
     @include ff--sans-serif(400);
     -webkit-font-smoothing: antialiased;
+    background: #ffffff;
 }
 
 article,
@@ -50,6 +51,9 @@ h6 {
     color: $c-base__02;
 }
 
+h2 {
+  font-size: 1.75em;
+}
 
 /* Media */
 audio, canvas, progress, video {
