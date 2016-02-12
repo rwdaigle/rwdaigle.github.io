@@ -11,7 +11,7 @@ github_username: rwdaigle
 
 # Build settings
 include: ["a"]
-markdown: redcarpet
+markdown: kramdown
 permalink: /:title
 sass:
     style: compressed
