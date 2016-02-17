@@ -12,6 +12,8 @@ github_username: rwdaigle
 # Build settings
 include: ["a"]
 markdown: kramdown
+kramdown:
+  input: GFM
 permalink: /:title
 sass:
     style: compressed
