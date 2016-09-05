@@ -8,6 +8,9 @@ Quick Elixir ditty to recursively list the files in a given directory:
 
 ```elixir
 defmodule FileExt
+
+  def ls_r(nil), do: ls_r(".")
+  def ls_r(""), do: ls_r(".")
   def ls_r(path) do
     cond do
       File.regular?(path) -> [path]
@@ -23,7 +26,7 @@ end
 ```
 
 ```elixir
-FileExt.ls_r(".")     
+FileExt.ls_r("..")     
 ["/Users/ryan/projects/rwdaigle.github.io/README.md",
  "/Users/ryan/projects/rwdaigle.github.io/LICENSE",
  "/Users/ryan/projects/rwdaigle.github.io/index.html",
