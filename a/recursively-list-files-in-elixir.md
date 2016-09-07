@@ -30,8 +30,10 @@ FileExt.ls_r("../exgen")
  "..."]
 
  FileExt.ls_r("/Users/ryan/projects/exgen")
- ["../exgen/.git/COMMIT_EDITMSG", "../exgen/.git/config",
-  "../exgen/.git/description", "../exgen/.git/HEAD",
-  "../exgen/.git/hooks/applypatch-msg.sample",
+ ["/Users/ryan/projects/exgen/.git/COMMIT_EDITMSG",
+  "/Users/ryan/projects/exgen/.git/config",
+  "/Users/ryan/projects/exgen/.git/description",
+  "/Users/ryan/projects/exgen/.git/HEAD",
+  "/Users/ryan/projects/exgen/.git/hooks/applypatch-msg.sample",
   "..."]
 ```
