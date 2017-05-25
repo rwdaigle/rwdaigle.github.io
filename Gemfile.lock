@@ -126,5 +126,8 @@ PLATFORMS
 DEPENDENCIES
   github-pages
 
+RUBY VERSION
+   ruby 2.1.7p400
+
 BUNDLED WITH
-   1.10.6
+   1.14.6
