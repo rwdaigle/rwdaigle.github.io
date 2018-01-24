@@ -1,19 +1,108 @@
-# Site settings
-title: Ryan Daigle
-description: >
-    Locally sourced, organic, artisinal bits. Engineering at Spreedly. Elixir enthusiast.
-author: Ryan Daigle
-email: ryan.daigle@gmail.com
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://ryandaigle.com" # the base hostname & protocol for your site
-twitter_username: rwdaigle
-github_username: rwdaigle
+# main text of home
+name: Ryan Daigle
+bio: Half-stack engineer
 
-# Build settings
-include: ["a"]
-markdown: kramdown
-kramdown:
-  input: GFM
-permalink: /:title
-sass:
-    style: compressed
+# twitter summary info
+description: A blog about engineering, technology, and related stuff
+
+# if it's an external image, update below for true
+# better with square images
+external-image: false
+picture: assets/images/profile.jpg
+
+# If you want to include your resume, set to true
+# and specify source (external or local).
+resume: false
+resume-external: true
+resume-url: https://google.com/?q=my+resume
+
+url: https://ryandaigle.com
+# your url: http://USERNAME.github.io
+
+permalink: /a/:title/
+
+# To enable google analytics, supply your token below
+# analytics-google: 'UA-MYANALYTICS'
+
+# To enable piwik tracking, supply your url & site ID below
+# analytics-piwik-url: 'piwik.my-host.com'
+# analytics-piwik-id: 1
+
+# if you don't want comments in your posts, leave categories empty
+disqus:
+  shortname: mydisqus # enter this from your disqus account
+  categories: [] # only show disqus for posts that have these categories
+
+# if you don't have any of social below, comment the line
+# facebook: myfacebook
+twitter: rwdaigle
+# google: mygoogle
+# instagram: myinstagram
+# pinterest: mypinterest
+linkedin: rwdaigle
+# youtube: myyoutube
+# spotify: myspotify
+github: rwdaigle
+# lastfm: mylastfm
+# stackoverflow: 7044681/mystackoverflow
+# quora: userquora
+# reddit: username
+# medium: medium
+# vimeo: myvimeo
+# lanyrd: mylanyrd
+email: ryan.daigle@gmail.com
+
+authors:
+    ryan:
+        name: Ryan Daigle
+        bio: Director of <a href="http://engineering.spreedly.com">Engineering at Spreedly</a>. Half-stack developer. My bits are handcrafted, locally-sourced, and humanely raised.
+        external-image: false
+        picture: assets/images/profile.jpg
+        twitter: rwdaigle
+
+# do you want a larger site? change the option below
+# options: [normal, large] | default: normal
+# normal = 560px / large = 810px
+width: normal
+
+# if you don't need pagination, comment the *paginate* configs below
+paginate: 10
+paginate_path: "/page:num/"
+
+# if you don't need projects, comment the *projects* configs below
+projects: true
+
+publications: true
+
+talks: true
+
+# if you don't need "about" or "blog", comment them out below
+# about: true
+# blog: true
+
+# do you want to show the "read time" of the posts?
+read-time: true
+
+# do you want to show the "tags" inside the posts?
+show-tags: true
+
+# related posts inside a post?
+related: true
+
+# Display links for next and previous posts for the specified categories
+post-advance-links: []
+
+# show author block at the end of a post ?
+show-author: true
+
+# do you want some animations?
+animation: false
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-paginate
+
+jekyll-mentions:
+    base_url: https://github.com

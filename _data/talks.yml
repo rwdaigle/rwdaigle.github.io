@@ -1,0 +1,9 @@
+- title: Getting To Know the Elixir Development Environment
+  date: 2016-01-14
+  url: https://github.com/rwdaigle/elixir-environment-basics
+- title: Making Sense of Elixir Directives
+  date: 2016-02-11
+  url: https://github.com/rwdaigle/elixir-directives
+- title: Mocks and Explicit Contracts in Practice with an Elixir Slackbot
+  url: https://www.youtube.com/watch?v=NDfB3bVnvnA
+  date: 2016-02-15

@@ -1,5 +1,5 @@
-source 'https://rubygems.org'
-
-ruby "2.1.7"
+source 'http://rubygems.org'
 
 gem 'github-pages'
+# gem 'html-proofer'
+# gem 'jekyll-admin'
