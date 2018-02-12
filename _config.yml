@@ -1,9 +1,10 @@
 # main text of home
 name: Ryan Daigle
-bio: Half-stack engineer
+bio: A smattering of engineering, technology, and related stuffs
 
-# twitter summary info
-description: A blog about engineering, technology, and related stuff
+# SEO/meta
+title: Ryan Daigle
+description: A smattering of engineering, technology, and related stuffs
 
 # if it's an external image, update below for true
 # better with square images
