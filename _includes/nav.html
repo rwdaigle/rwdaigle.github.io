@@ -1,18 +1,8 @@
 <nav class="{% if page.title == "Home" %}nav-home{% else %}nav{% endif %}">
     <ul class="list">
-        {% if page.title != "Home" %}
-            <li class="item">
-                <a class="link" href="{{ site.url }}/">Home</a>
-            </li>
-        {% endif %}
-
-        {% if site.blog == true %}
-            {% if page.title != "Blog" %}
-                <li class="item">
-                    <a class="link" href="{{ site.url }}/blog">Blog</a>
-                </li>
-            {% endif %}
-        {% endif %}
+        <li class="item">
+            <a class="link" href="{{ site.url }}/">Home</a>
+        </li>
 
         {% if site.publications == true %}
             <li class="item">
