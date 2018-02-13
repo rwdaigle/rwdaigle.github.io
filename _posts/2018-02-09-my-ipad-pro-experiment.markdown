@@ -72,7 +72,7 @@ Here is how I think about my iPad Pro now:
 
 ### Writing
 
-A lot of what I do at work is communicating via writing. Long-form writing, Slack collaboration, blog posts, some emails, etc... The iPad is a great writing machine. I’ve installed [Ulysses](Ulysses%20by%20Ulysses%20GmbH%20&%20Co.%20KGhttps://itunes.apple.com/us/app/ulysses/id1225571038?mt=8 "Ulysses for the iPad") and now use the iPad as my primary long-form writing device.
+A lot of what I do at work is communicating via writing. Long-form writing, Slack collaboration, blog posts, some emails, etc... The iPad is a great writing machine. I’ve installed [Ulysses](https://itunes.apple.com/us/app/ulysses/id1225571038?mt=8 "Ulysses for the iPad") and now use the iPad as my primary long-form writing device.
 
 Since I know Ulysses is one of those well-supported apps with excellent keyboard and landscape support (it really is, highly recommended), I can skirt the iPad app ecosystem issue I ran into during my initial experiment.
 
